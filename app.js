@@ -16,8 +16,8 @@ const divElm = document.querySelector(".joke__div")
 //     })
 
 
-async function getData() {
-    try {
+async function getData() { //Denne function er async. Dette betyder at den tjekker, og reurnerer fejl før den har koden færdig.
+    try { //try catch bruges her så hvis en fejl opstår kan den fanges og sendes til nogen der kan kigge på den ie dig eller brugeren.
         const response = await fetch(baseUrl, {
             headers: {
                 Accept: "application/json"
